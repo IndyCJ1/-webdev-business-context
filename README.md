@@ -2,7 +2,25 @@
 
 This is the source-of-truth context document for **Lanier Web**, a local web design business in Gainesville, Georgia. Clone this repo and paste the relevant sections into Claude (Claude Code or claude.ai) to continue work from any computer.
 
-> **Note:** This business was previously called "Apex Web." The rebrand to **Lanier Web** is in progress. The codebase in `cuesseler-web` still references "Apex Web" in places — rebranding the code is one of the priority tasks below.
+## Repo contents
+
+```
+README.md                                  ← you are here
+templates/
+  proposal.md                              ← 1-page proposal sent after discovery
+  service-agreement.md                     ← contract template (have GA attorney review)
+  client-intake-form.md                    ← post-signing questionnaire
+  case-study.md                            ← format for shipping a client win
+  portfolio-strategy.md                    ← when/how to swap demos for real work
+outreach/
+  cold-email-templates.md                  ← 5 cold email templates
+  website-audit-template.md                ← free audit deliverable for prospects
+  target-list-workflow.md                  ← how to find leads + cadence
+ops/
+  onboarding-checklist.md                  ← step-by-step from signed → launched
+  stripe-and-billing-setup.md              ← invoicing + subscriptions
+  monthly-operations.md                    ← weekly/monthly/quarterly tasks
+```
 
 ---
 
@@ -135,16 +153,25 @@ All three layouts now have hamburger mobile nav (PerchLayout, SoleLayout, hogtow
 
 ---
 
-## Current Priority Tasks (in order)
+## Priority Task Status (as of 2026-05-09)
 
-1. **Rebrand the website fully to Lanier Web** — find/replace "Apex Web" → "Lanier Web" across cuesseler-web codebase, update titles, footers, social meta, and the contact form's email recipient
-2. **Improve homepage copy and CTA sections** — apply the copy voice rules above
-3. **Set up professional metadata and SEO** — `<title>`, `<meta description>`, Open Graph tags, canonical URLs, JSON-LD LocalBusiness schema, `robots.txt`, `sitemap.xml`
-4. **Improve realism of demo websites** — better imagery, more believable copy, consistent address/phone, real-looking testimonials
-5. **Create proposal and contract templates** — 1-page proposal PDF + service agreement
-6. **Create outreach systems for local businesses** — email templates, audit deliverable, target list workflow
-7. **Improve portfolio presentation** — replace Work section with real before/after framing once a client signs
-8. **Prepare the business for its first paying client** — Stripe + invoice flow, contract template, intake form
+1. ✅ **Rebrand to Lanier Web** — code-side find/replace done; nav, footer, titles, demo attribution all say Lanier Web
+2. ✅ **Homepage copy + CTAs** — hero, services, pricing, work, about, contact all rewritten with the voice rules
+3. ✅ **SEO + metadata** — full Open Graph, Twitter cards, canonical URLs, JSON-LD LocalBusiness schema, robots.txt, sitemap.xml, favicon, noindex on demos
+4. ✅ **Demo realism** — Hogtown phone fixed to (770) area code, address fixed to real Gainesville GA street; Solé booking phone updated
+5. ✅ **Proposal + contract templates** — see `templates/proposal.md` and `templates/service-agreement.md`
+6. ✅ **Outreach systems** — see `outreach/` (5 cold email templates, free audit deliverable, lead workflow)
+7. ✅ **Portfolio presentation** — see `templates/portfolio-strategy.md` (3-stage plan from demos → real case studies)
+8. ✅ **First-client prep** — see `ops/` (onboarding checklist, Stripe setup, monthly operations) + `templates/client-intake-form.md`
+
+### What's still to do (post-MVP)
+
+- Point lanierweb.com DNS at Cloudflare Pages (currently still on `cuesseler-web.pages.dev`)
+- Set up `info@lanierweb.com` email routing in Cloudflare
+- Set up Stripe account + connect business bank account
+- File DBA at Hall County clerk
+- Create OG image (1200×630 PNG at `/public/og.png`)
+- Get the first paying client
 
 ---
 
