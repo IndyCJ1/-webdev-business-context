@@ -20,6 +20,7 @@ ops/
   onboarding-checklist.md                  ← step-by-step from signed → launched
   stripe-and-billing-setup.md              ← invoicing + subscriptions
   monthly-operations.md                    ← weekly/monthly/quarterly tasks
+  notion-crm-setup.md                      ← lead/client tracker setup (15 min)
 ```
 
 ---
