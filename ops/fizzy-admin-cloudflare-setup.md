@@ -41,12 +41,27 @@ The Fizzy mockup at `lanierweb.com/mockups/fizzy/` has a working admin page at `
 
 ## What the admin can edit
 
-- **Where are you today?** (the location text)
-- **Hours** (e.g. "11am – 8pm")
-- **Open / Closed today** toggle (closed shows a different banner state)
-- **Optional note** (e.g. "Cash only" or "Free for kids")
+The admin has three tabs:
 
-That's it. Menu items, schedule, photos — those still go through Lanier Web monthly edits in the Starter package, OR upgrade to Plus for full content control.
+**Today**
+- Where you are today
+- Hours (e.g. "11am – 8pm")
+- Open / Closed today toggle (closed shows a different banner state)
+- Optional note (e.g. "Cash only" or "Free for kids")
+
+**Menu**
+- Add, edit, or remove drinks across three categories: Dirty Sodas, Fizzy Refreshers, Add-ons
+- Each item: name, description (sodas/refreshers only), price
+- Click "Save Menu" to publish — visible on the site within 60 seconds
+
+**Bookings**
+- All booking requests submitted through your website show up here
+- Sorted by submission time, newest first
+- See name, phone, email, event date, type, headcount, location, notes
+- Tap-to-call on phone numbers, tap-to-email on emails
+- "Mark handled" removes the booking from the list once you've contacted them
+
+Photos, the schedule, and the about-page text still go through Lanier Web monthly edits in the Starter package, OR upgrade to Plus for full content control.
 
 ## Troubleshooting
 
