@@ -167,12 +167,26 @@ All three layouts now have hamburger mobile nav (PerchLayout, SoleLayout, hogtow
 
 ### What's still to do (post-MVP)
 
-- Point lanierweb.com DNS at Cloudflare Pages (currently still on `cuesseler-web.pages.dev`)
-- Set up `info@lanierweb.com` email routing in Cloudflare
+- ✅ ~~Point lanierweb.com DNS at Cloudflare Pages~~ — **DONE 2026-05-10, site is live**
+- ✅ ~~Cloudflare Bot Fight Mode + Security Level~~ — turned off so Googlebot can crawl (see Gotchas below)
+- ✅ ~~Submit sitemap to Google Search Console~~ — submitted; waiting on indexing
+- Set up Cloudflare Email Routing for the 4 `lanierweb.com` addresses (5 min)
+- Claim **Google Business Profile** for Lanier Web (highest local-SEO impact)
 - Set up Stripe account + connect business bank account
-- File DBA at Hall County clerk
-- Create OG image (1200×630 PNG at `/public/og.png`)
+- File DBA at Hall County clerk (~$50)
+- Create OG image (1200×630 PNG at `/public/og.png`) — referenced in meta but missing
+- GA attorney review of `templates/service-agreement.md` before first use
 - Get the first paying client
+
+### Cloudflare zone gotchas (lanierweb.com)
+
+When adding the domain to Cloudflare, two settings default ON that block Googlebot:
+
+1. **Security → Bots → Bot Fight Mode** — must be **OFF**
+2. **Security → Settings → Security Level** — must be **Essentially Off**
+3. **Security → Settings → Browser Integrity Check** — should be **OFF**
+
+Symptom if any are on: 403 response with `Cf-Mitigated: challenge` header. Google Search Console will report "invalid sitemap" or "couldn't fetch." Apply this same fix to any future client domain pointed at Cloudflare.
 
 ---
 
