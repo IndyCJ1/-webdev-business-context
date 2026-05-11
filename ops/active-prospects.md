@@ -68,7 +68,7 @@ KV namespace `FIZZY_KV` holds the data. Setup steps in `ops/fizzy-admin-cloudfla
 - **Existing site:** https://canopyandtheroots.com/
 - **Industry:** Coffee shop + yoga studio (upstairs) + underground music & comedy listening room (downstairs); membership-driven community space
 - **Location:** 53 W Main Street, Dahlonega, GA 30533
-- **Established:** 2019 (per About page — "SIX years ago")
+- **Established:** 2020 (confirmed by owner)
 - **Owner:** **Hollie Lytle** (Founder & CEO) — on the About page
 - **Team named on About page:** Ansley Walker (fiber artist), Danny Wilson (interior design), Akeeme Martin (manager + sound), **Franchesca Spittler** (manager + fitness instructor — likely a yoga teacher), Diana, Kerri, Augie (events/social house)
 - **Tier pitched:** **Plus** ($3,500 build + $75/mo) — multi-revenue-stream business; needs proper booking + ticketing + membership funnel. Could grow into Pro with admin add-on for event management.
