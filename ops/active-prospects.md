@@ -170,6 +170,64 @@ Mockup built, email drafted — ready to send (events@canopyandtheroots.com) or 
 
 ---
 
+## Gainesville Coffee Shop at Lawrence Pharmacy (gainesvillecoffeeshop.com)
+
+- **Mockup URL:** https://lanierweb.com/mockups/gainesville-coffee-shop/
+- **Existing site:** https://gainesvillecoffeeshop.com/ (WordPress, 4/10 design, content only fills half the viewport — visible layout bug)
+- **Industry:** Vintage pharmacy-counter luncheonette — breakfast + lunch + free local delivery. NOT an artisan coffee shop. Diner menu (chili dogs, burgers, English muffin sandwiches, omelets, breakfast plates).
+- **Host pharmacy:** **Lawrence Pharmacy** — opened **January 29, 1958** — ~70 years on Broad Street. Owner of pharmacy: **Stephen Adams, RPh**.
+- **Location:** 631 Broad Street SE, Gainesville, GA 30501
+- **Phone:** 770-534-3231
+- **Email:** Info@GainesvilleCoffeeShop.com
+- **Hours:** Monday – Friday, 8am – 2pm. Closed weekends.
+- **Tagline they currently use:** "We Deliver Breakfast & Lunch. FREE delivery in Gainesville — No minimum order!"
+- **Online ordering:** ChowNow → https://ordering.chownow.com/order/3192/locations
+- **Sister business:** Skogie's on Lake Lanier (same operators likely)
+- **Tier pitched:** **Starter** ($1,500 + $50/mo). Single page is plenty — limited hours, focused menu, one location. Could grow with an admin add-on later if they want a daily-specials editor (Fizzy admin pattern).
+- **Repo path:** `cuesseler-web/src/pages/mockups/gainesville-coffee-shop/`
+
+### Style direction
+
+Vintage Americana / 1950s pharmacy-counter / soda-fountain aesthetic. NOT modern indie coffee, NOT rustic farmhouse — this is a specific lane that matches their actual identity (a diner counter inside a 1958 pharmacy).
+- **Palette:** warm cream base, deep pharmacy red, forest/apothecary green, mustard accent, charcoal ink
+- **Type:** DM Serif Display (or similar vintage editorial serif) + Inter (clean body) + Caveat (handwritten daily-special touch)
+- **Visual cues:** counter signage feel, breakfast plate photography, soft 1958 nostalgia without going theme-park kitsch
+
+### Their existing site (for the pitch)
+
+**Strengths:** has hours, phone, address, ChowNow ordering, email contact. Bones are there.
+
+**Functional + visual gaps (the actual pitch):**
+- **Layout fills only half the page** — visible bug on desktop. Content doesn't span the viewport. This is the single most obvious thing to fix.
+- **WordPress template, "Proudly powered by WordPress" footer** — `/wp/` directories in image paths suggest an older install
+- **No menu actually visible on the homepage** — menu is gated behind a separate `/menus/` page when their entire business is the menu
+- **No photos of the space** — the pharmacy-counter setting is their biggest differentiator and it's invisible on the site
+- **No mention of the 1958 heritage** — 70 years of history is the strongest brand story they have, and it's not on the site
+- **Limited mobile signals** — basic WordPress responsive at best
+- **No social media links** — only Yelp gets mentioned
+- **Free delivery is buried** — their tagline is "We Deliver Breakfast & Lunch · FREE delivery, no minimum" but the homepage doesn't lead with it
+
+### Pitch angle
+
+> "Your site has all the right pieces — hours, phone, ChowNow, the address. But the layout is broken on desktop (literally fills half the page), you don't show photos of the counter, and the fact that you've been at the corner of Broad Street since 1958 isn't anywhere on the homepage. That 70-year history is your strongest brand story. I rebuilt it around that — kept your ChowNow ordering, kept your delivery promise out front, made it work on a phone."
+
+### Status
+
+Mockup ready — direct walk-in target (right in downtown Gainesville). Easiest of all the prospects to drop in on since it's local.
+
+**Menu is now real** — pulled directly from their 2024 PDF (gainesvillecoffeeshop.com/wp/wp-content/uploads/2024/06/Menu-2024.pdf). All 12 breakfast items, 23 sandwich items, soups, salads, drinks, sides, combos baked into the mockup with exact prices. Specific items worth noting in conversation: **Cathead biscuit**, **Tot's Eggs in a Blanket**, **Kai Kai Special**, **Hot Sicilian on a Kaiser**, **Cuban Sandwich**, **Grilled Crabcake BLT**, **Thai Steak on a Kaiser**.
+
+**Catering is a real revenue lane** — their PDF explicitly promotes "we cater & offer breakfast, danish & sandwich trays for all events." Highlighted on the mockup delivery card.
+
+**Location landmark:** They're right next to **Northeast Georgia Medical Center** — added to the mockup. NGMC is the dominant employer in Gainesville so this is huge context for the office-breakfast / hospital-staff delivery angle.
+
+**Before walking in, still need:**
+- Real photos of the space + the counter (their gallery page has 12 photos at /wp/wp-content/uploads/photo-gallery/thumb/ — could swap in)
+- Confirm whether Stephen Adams runs the coffee shop too, or if it's a separate operator inside his pharmacy
+- Confirm hours haven't shifted since the 2024 PDF
+
+---
+
 ## Mockup workflow (general)
 
 For any future prospect, the proven pattern is:
