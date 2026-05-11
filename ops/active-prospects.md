@@ -71,7 +71,7 @@ KV namespace `FIZZY_KV` holds the data. Setup steps in `ops/fizzy-admin-cloudfla
 - **Established:** 2020 (confirmed by owner)
 - **Owner:** **Hollie Lytle** (Founder & CEO) — on the About page
 - **Team named on About page:** Ansley Walker (fiber artist), Danny Wilson (interior design), Akeeme Martin (manager + sound), **Franchesca Spittler** (manager + fitness instructor — likely a yoga teacher), Diana, Kerri, Augie (events/social house)
-- **Tier pitched:** **Plus** ($3,500 build + $75/mo) — multi-revenue-stream business; needs proper booking + ticketing + membership funnel. Could grow into Pro with admin add-on for event management.
+- **Tier pitched (revised approach — 2026-05-10):** **Starter or Plus ($1,500–$3,500 build + $50–$75/mo)** for **Phase 1**. Build *around* her existing tools (Eventbrite/external ticketing, Google Forms, in-store membership) — make them feel native instead of replacing them. **Phase 2 upsell** down the line: integrated Stripe payments + admin dashboard + recurring membership billing (~$400–500 add-on like the Fizzy admin). Reasoning: her brand is already polished, so v1 is navigation + clarity + missing details (hours/phone/address), not full custom infrastructure. Faster yes, lower risk, natural Phase 2 conversation in 6 months.
 - **Repo path:** `cuesseler-web/src/pages/mockups/canopy-and-the-roots/` (single `index.astro` for v1)
 - **Real contact info:**
   - Email: events@canopyandtheroots.com
@@ -106,7 +106,7 @@ Dual-zone aesthetic that mirrors their physical split:
 
 ### Pitch angle
 
-> "Your brand identity is already gorgeous — I'm not going to touch that. What I built is the conversion layer on top: yoga class booking, ticket purchase for shows, membership tiers with visible pricing, and a hours-and-phone block that actually appears on the page. Right now someone has to DM you to find out what time you open. That's a leak."
+> "Your brand identity is already gorgeous — I'm not going to touch that. What I built is the navigation layer on top: a yoga schedule that lives on the yoga page, a shows section that surfaces your upcoming nights on the homepage, hours and phone visible everywhere, and inquiry forms that don't feel like a side trip. Right now someone has to DM you to find out what time you open. That's a leak. For v1 we keep your existing booking and ticketing flows running behind the scenes — Eventbrite, Google Forms, in-store membership. Phase 2 we can talk about wrapping them in proper checkout if you ever want to bring those in-house."
 
 ### Membership tiers (mocked — confirm with them)
 
@@ -124,14 +124,49 @@ The real site lists perks (bottomless coffee, member merch, special-event discou
 
 - $12 / guest, $8 / member per class. No class packs, no schedule, no booking.
 
+### Email/DM draft (final, build-around framing)
+
+**Subject:** Quick website mockup for Canopy + the Roots
+
+> Hi Hollie,
+>
+> I'm Collier with Lanier Web, a local web design business here in Gainesville. I came across Canopy + the Roots online a while back and built a quick website mockup for you because I really liked the concept and thought your site could do a little more for you.
+>
+> Preview:
+> https://lanierweb.com/mockups/canopy-and-the-roots/
+>
+> Your branding is already really strong. The mockup is mostly about making the site easier to navigate, so people can find class times, show dates, hours, and the right inquiry form without having to dig around.
+>
+> A few things it could help with:
+>
+> A weekly yoga schedule that lives on the yoga page itself, so people aren't bouncing between pages to find class times
+>
+> An upcoming shows section right on the homepage with clear ticket links going to your existing setup
+>
+> Hours, phone number, and address easy to find from any section (right now those don't really show up anywhere on the site)
+>
+> A membership page that actually lays out the perks clearly, so more people are curious enough to come in and ask
+>
+> A cleaner private events section with the inquiry form built right in, instead of feeling like a separate page to go find
+>
+> No pressure at all. I just thought Canopy had a really cool concept and wanted to show you what it could look like with everything pulled together a little tighter.
+>
+> Thanks,
+> Collier Uesseler
+> Founder · Lanier Web
+> lanierweb.com · collier@lanierweb.com
+> Modern Websites. Real Results.
+
 ### Status
 
-Mockup built — ready to walk in or email Hollie directly. Dahlonega is ~45 min from Gainesville (easy drop-in). Best time: weekday late morning when the coffee crowd thins but before evening yoga.
+Mockup built, email drafted — ready to send (events@canopyandtheroots.com) or walk in. Dahlonega is ~45 min from Gainesville (easy drop-in). Best time: weekday late morning when the coffee crowd thins but before evening yoga.
 
 **Before walking in, still need:**
 - Real phone (placeholder `(706) 555-0184` in the mockup)
 - Real hours (best-guess in the mockup)
 - Real membership pricing — owner-only conversation since they don't publish it
+
+**Note for in-person conversation:** the mockup shows three aspirational membership tiers and per-class reserve buttons. Be ready to say *"this is the full vision — for v1 we'd start with the redesign and keep your booking flows running behind the scenes."* Otherwise Hollie may expect the build to match the mockup exactly.
 
 ---
 
