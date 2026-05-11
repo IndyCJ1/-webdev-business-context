@@ -228,6 +228,29 @@ Mockup ready — direct walk-in target (right in downtown Gainesville). Easiest 
 
 ---
 
+## Next: Farmhouse Coffee (no mockup yet — top priority)
+
+- **Address:** 118 Jesse Jewell Pkwy SE, Suite #100, Gainesville GA 30501
+- **Phone:** 706-291-0001
+- **Website:** linktr.ee/farmhousecoffee — **no real website at all**, just a Linktree
+- **Rating:** 4.8 stars · Opened Sept 2023 · Independent
+- **Why #1:** Same pattern as Fizzy (social-only, loved brand, no real web presence). Single-page Starter, ~2 hours to build.
+- **Pitch:** *"You're at 4.8 stars without a real website. Imagine what happens when people googling 'coffee Gainesville' land on something better than a Linktree."*
+- **Tier pitched:** Starter ($1,500 + $50/mo)
+- **Status:** Research done, mockup not yet built. Walk-in target — right in Gainesville.
+
+### Other Gainesville coffee shops ranked (discovery run 2026-05-11)
+
+| Rank | Business | Web presence | Verdict |
+|---|---|---|---|
+| 1 | Farmhouse Coffee | Linktree only | **Build next** |
+| 2 | Gainesville Coffee Shop @ Lawrence Pharmacy | WordPress 4/10, half-page bug | **Mockup built** |
+| 3 | Meadowlark Coffee (meadowlarkcoffee.shop) | Squarespace 5.5/10, no hours/phone | Possible Starter |
+| 4 | Inman Perk Coffee (inmanperkcoffee.com) | WordPress 6/10, mid-2010s | Harder sell, 20-year biz |
+| Skip | Boarding Pass Coffee (boardingpasscoffee.com) | Shopify 7.5/10, fully set up | Multi-location, skip |
+
+---
+
 ## Mockup workflow (general)
 
 For any future prospect, the proven pattern is:

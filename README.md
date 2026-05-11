@@ -18,7 +18,7 @@ outreach/
   target-list-workflow.md                  ← how to find leads + cadence
 ops/
   notion-crm-setup.md                      ← lead/client tracker setup (15 min)
-  active-prospects.md                      ← current mockups in flight (Gainesville HVAC, Fizzy, Canopy + the Roots)
+  active-prospects.md                      ← current mockups in flight (Gainesville HVAC, Fizzy, Canopy + the Roots, Gainesville Coffee Shop)
   onboarding-checklist.md                  ← step-by-step from signed → launched
   stripe-and-billing-setup.md              ← invoicing + subscriptions
   monthly-operations.md                    ← weekly/monthly/quarterly tasks
@@ -177,6 +177,16 @@ All under `cuesseler-web/src/pages/mockups/`. Each one matches the prospect's ex
 - Live: https://lanierweb.com/mockups/canopy-and-the-roots/
 - **Status:** mockup ready, email draft prepared. Dahlonega is 45 min from Gainesville — walk-in feasible.
 
+**Gainesville Coffee Shop at Lawrence Pharmacy** (Starter pitch)
+- Path: `src/pages/mockups/gainesville-coffee-shop/` (single `index.astro`)
+- Style: vintage pharmacy-counter / Americana — warm cream, deep pharmacy red (#B5402E), apothecary forest green, mustard accents; DM Serif Display + Inter + Caveat
+- **Real 2024 menu from their PDF:** full breakfast (12 items, $2.99–$7.99) + 23 sandwiches ($2.99–$8.99) + soups + salads + drinks + combos. All baked in. Key items: "Cathead" biscuit, Tot's Eggs in a Blanket, Kai Kai Special, Grilled Crabcake BLT, Thai Steak on a Kaiser, Cuban Sandwich.
+- **Key pitch angles:** Lawrence Pharmacy established Jan 29, 1958; right next to Northeast Georgia Medical Center (huge employer); FREE delivery in Gainesville, no minimum; catering available (breakfast/danish/sandwich trays for events); sister business Skogies at Gainesville Marina
+- **Time-aware open/closed banner** — same pattern as Fizzy, flips based on visitor's clock (breakfast 8–11, lunch 11–2, closed weekends)
+- **Contact:** info@gainesvillecoffeeshop.com · 770-534-3231
+- Live: https://lanierweb.com/mockups/gainesville-coffee-shop/
+- **Status:** mockup ready. Email draft in `ops/active-prospects.md`. Walk-in target — right in downtown Gainesville.
+
 ### Mobile Nav
 All three demo layouts and the agency site have hamburger mobile nav. Toggle via `<script is:inline>` + addEventListener.
 
@@ -218,8 +228,18 @@ All three demo layouts and the agency site have hamburger mobile nav. Toggle via
 - ✅ Renamed GitHub repo `cuesseler-web` → `apex-web` (local folder name unchanged; old URL still redirects)
 - ✅ Added **time-aware banner** to Fizzy mockup — flips OPENS LATER / OPEN NOW / CLOSED automatically based on visitor's clock, re-checks every minute
 - ✅ Built **Canopy + the Roots** mockup (Dahlonega coffee/yoga/music venue) — earthy upstairs + dark underground dual-zone aesthetic, verified gap analysis across 8 of their pages, owner name found (Hollie Lytle), email draft prepared
+- ✅ Built **Gainesville Coffee Shop** mockup (vintage pharmacy-counter aesthetic, real 2024 menu from PDF, 1958 heritage + NGMC landmark, time-aware open/closed banner)
+- ✅ **Lead discovery run** for Gainesville coffee shops — ranked 5 prospects by web quality; Farmhouse Coffee is top pick (Linktree only, 4.8 stars), ranked list in `ops/active-prospects.md`
+- ✅ Installed **impeccable plugin** for design/UX auditing (`/plugin marketplace add pbakaus/impeccable`) — needs full restart + `/impeccable teach` to set up PRODUCT.md before first use
+- ✅ Discussed **Obsidian** vault setup — just open the `-webdev-business-context` folder as a vault in Obsidian (obsidian.md), no plugins required
+- ✅ Discussed **staging environments** — use Cloudflare Pages preview branches (push to `staging` branch → auto preview URL), not a homelab. Homelab doesn't match Cloudflare Pages/Functions/KV behavior.
+- ✅ Discussed **payment security** for future builds — use Stripe Checkout/Subscriptions (never touch card data), Cloudflare Functions verify Stripe webhook signatures, secrets go in Pages environment variables never in code
 
 ### Still to do (manual / external)
+- **Build Farmhouse Coffee mockup** — top prospect pick, Linktree-only at 4.8 stars, 706-291-0001, 118 Jesse Jewell Pkwy SE
+- **Send outreach emails** — Canopy (events@canopyandtheroots.com) and Gainesville Coffee Shop (info@gainesvillecoffeeshop.com). Email drafts in `ops/active-prospects.md`.
+- **Walk into Gainesville HVAC** with the mockup
+- Run `/impeccable teach` → `/impeccable clarify` on lanierweb.com homepage copy to remove AI-sounding text
 - Set up Cloudflare Email Routing for the 4 `lanierweb.com` addresses (5 min) — OR sign up for Google Workspace ($6/mo, recommended)
 - Set up the FIZZY_KV namespace + FIZZY_PASSWORD secret in Cloudflare so the Fizzy admin can save (5 min — see `ops/fizzy-admin-cloudflare-setup.md`)
 - Claim **Google Business Profile** for Lanier Web (highest local-SEO impact)
@@ -227,7 +247,6 @@ All three demo layouts and the agency site have hamburger mobile nav. Toggle via
 - File DBA at Hall County clerk (~$50)
 - Create OG image (1200×630 PNG at `/public/og.png`) — referenced in meta but missing
 - GA attorney review of `templates/service-agreement.md` before first use
-- **Send the Fizzy email/IG DM and walk into Gainesville HVAC**
 - Land the first paying client
 
 ---
@@ -301,6 +320,65 @@ Symptom if any are on: 403 response with `Cf-Mitigated: challenge` header. Googl
 
 ---
 
+## Lead Discovery Process
+
+Finding prospects whose websites are hurting their business more than helping.
+
+### Tier 1 — Claude-in-the-loop (free, start here)
+Paste a Google Maps search URL or list of local businesses into Claude. Ask it to rank each by website quality: no site at all, Linktree-only, no HTTPS, no hours/phone, broken layout, outdated design. Output: ranked prospect list with one-line pitch angle per business. ~5 minutes per batch, costs nothing.
+
+### Tier 2 — Lightweight script (build when processing 100+/week)
+A Cloudflare Worker that takes a CSV of business URLs and returns a quality score per site (HTTPS, mobile viewport, contact info, responsiveness). Pipe results into Notion CRM. ~2 hours to build.
+
+### Tier 3 — Full pipeline ($50–100/mo — only after first paying client)
+Outscraper or Apify pulls businesses from Google Maps by category → Worker scores → Notion auto-imports → Claude drafts personalized cold emails per row. Only worth building when sending 30+ cold emails a week.
+
+**Don't automate the mockup.** The personalized demo is why prospects say yes. Generic mockups kill close rate. Two great mockups a week beat twenty mediocre ones.
+
+### What to look for (fast scan heuristics)
+1. No website at all — only social media links
+2. Linktree or bio.site as the "website"
+3. Layout broken or content only fills half the page
+4. Menu/pricing is a PDF or image (Google can't index it)
+5. "Proudly powered by WordPress" in the footer — minimal customization
+6. No hours or phone number visible
+7. No photos of the actual space or product
+8. Site last touched visibly 5+ years ago
+
+### Lead pipeline (Gainesville, 2026-05-11)
+See `ops/active-prospects.md` for full ranked list and mockup status.
+
+---
+
+## Tools
+
+### Impeccable (design/UX audit — installed 2026-05-11)
+Plugin by pbakaus. Install: `/plugin marketplace add pbakaus/impeccable`. Needs a **full Claude Code restart** after install (not just `/reload-plugins`) to appear in skills.
+
+**Workflow:**
+1. `cd` to the project you're auditing (e.g. `C:\Users\Collier\repos\cuesseler-web`)
+2. `/impeccable teach` — required first step. Creates `PRODUCT.md` (describe the business, users, brand tone). Never skip.
+3. Then run target commands on specific files.
+
+**Key commands:**
+| Command | Use it for |
+|---|---|
+| `/impeccable teach` | First-run setup — creates PRODUCT.md context |
+| `/impeccable audit [file]` | Technical quality scan (scores 0–20, includes AI slop test) |
+| `/impeccable critique [file]` | UX design review with heuristic scoring |
+| `/impeccable clarify [file]` | Rewrites AI-sounding copy to sound human |
+| `/impeccable polish [file]` | Final quality pass before showing a client |
+| `/impeccable bolder [file]` | Amplify safe or bland design choices |
+| `/impeccable typeset [file]` | Improve typography hierarchy |
+| `/impeccable layout [file]` | Fix spacing, rhythm, visual hierarchy |
+
+Note: `live` mode (browser iteration) requires a local dev server — skip for now.
+
+### Obsidian (knowledge base UI over this repo)
+Open `C:\Users\Collier\repos\-webdev-business-context` as a vault in Obsidian (free at obsidian.md). No plugins required — Claude reads/writes the same `.md` files. Optional: Templater (quick prospect entries), Dataview (query the tracker as a database), Calendar. The memory folder at `C:\Users\Collier\.claude\projects\...\memory\` can be a second vault if you want visibility into Claude's working notes.
+
+---
+
 ## Legal
 
 - **No LLC needed yet** — sole proprietor until 3+ paying clients or one demands it
@@ -329,7 +407,7 @@ Key code repos:
 
 The agency repo also contains:
 - Plus + Pro demos at src/pages/demos/
-- Active prospect mockups at src/pages/mockups/ (Gainesville HVAC, Fizzy, Canopy + the Roots)
+- Active prospect mockups at src/pages/mockups/ (Gainesville HVAC, Fizzy, Canopy + the Roots, Gainesville Coffee Shop)
 - Cloudflare Pages Functions for client admins at functions/api/
 
 Local paths: C:\Users\Collier\repos\cuesseler-web and hogtown-smoke
