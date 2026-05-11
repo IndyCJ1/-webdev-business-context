@@ -228,16 +228,77 @@ Mockup ready — direct walk-in target (right in downtown Gainesville). Easiest 
 
 ---
 
-## Next: Farmhouse Coffee (no mockup yet — top priority)
+## Farmhouse Coffee
 
-- **Address:** 118 Jesse Jewell Pkwy SE, Suite #100, Gainesville GA 30501
+- **Mockup URL:** https://lanierweb.com/mockups/farmhouse-coffee/
+- **Industry:** Specialty coffee shop — signature lattes, breakfast, rentable coffee trailer, FAM Club loyalty program
+- **Location:** 118 Jesse Jewell Pkwy SE, Suite 100, Gainesville, GA 30501
 - **Phone:** 706-291-0001
-- **Website:** linktr.ee/farmhousecoffee — **no real website at all**, just a Linktree
-- **Rating:** 4.8 stars · Opened Sept 2023 · Independent
-- **Why #1:** Same pattern as Fizzy (social-only, loved brand, no real web presence). Single-page Starter, ~2 hours to build.
-- **Pitch:** *"You're at 4.8 stars without a real website. Imagine what happens when people googling 'coffee Gainesville' land on something better than a Linktree."*
+- **Contact:** No public email found — Instagram DM or walk-in is the primary approach
+- **Website:** linktr.ee/farmhousecoffee — Linktree only, no real website
+- **Instagram:** @farmhousecoffee.co (8,100+ followers)
+- **Rating:** 4.8 stars, 183 reviews. Opened September 2023.
 - **Tier pitched:** Starter ($1,500 + $50/mo)
-- **Status:** Research done, mockup not yet built. Walk-in target — right in Gainesville.
+- **Repo path:** `cuesseler-web/src/pages/mockups/farmhouse-coffee/` (single `index.astro`)
+- **Style direction:** Warm cream (#FAF6F0), Playfair Display serif + Manrope + Caveat handwritten accents, rust accent (#C4622D), dark coffee-brown footer. Matches their Instagram aesthetic exactly — cozy, minimalistic, farmhouse warmth.
+- **Status:** Mockup live. Walk-in or Instagram DM to pitch.
+
+### What makes this one special
+
+Three revenue streams with no web support:
+
+1. **Coffee trailer** — bookings buried as one Linktree button. No page, no inquiry form, no pricing. Events prospects have no way to start the process without DMing.
+2. **FAM Club loyalty program** — no landing page. People can't understand the perks or sign up online. The club exists but the web presence for it doesn't.
+3. **8,100+ Instagram followers** — all driving traffic to a Linktree. Every one of those followers could be a subscriber, a trailer inquiry, or a loyalty member. Right now they land on four buttons.
+
+### Pitch angle
+
+> "You've built a 4.8-star brand with 8,000 Instagram followers and a coffee trailer people love — and all of that is backed by a Linktree. People googling 'coffee Gainesville' find scraped listing sites with your wrong hours. Your trailer bookings come in through DMs. Your FAM Club has no home. I built a site that fixes all three."
+
+### DM / Email draft
+
+**Instagram DM (primary — no public email):**
+
+> Hey! I'm Collier with Lanier Web, a local web design business in Gainesville. Big fan of what you've built — I stopped in a few weeks back. I put together a quick website mockup for you:
+>
+> lanierweb.com/mockups/farmhouse-coffee/
+>
+> Your Instagram is doing a lot of heavy lifting. The mockup gives it a real home: a trailer booking page so people can check availability without DMing you, a FAM Club signup that works online, and your hours + menu in one place.
+>
+> No pressure — just wanted to show you what it could look like. Happy to stop by and walk you through it if you're curious.
+>
+> Collier Uesseler · Lanier Web · lanierweb.com
+
+**Email version (if email is found):**
+
+Subject: Website mockup for Farmhouse Coffee
+
+> Hi,
+>
+> I'm Collier with Lanier Web, a web design business based here in Gainesville. I came in a few weeks back — the s'mores latte is genuinely excellent — and noticed you're running everything off a Linktree. I built a quick mockup to show you what a real site could look like:
+>
+> lanierweb.com/mockups/farmhouse-coffee/
+>
+> Three things the mockup addresses that the Linktree can't:
+>
+> Your coffee trailer has no booking page right now. People who want to book it for a wedding or event have to DM you to even start the conversation. The mockup has a dedicated trailer section with an availability form.
+>
+> The FAM Club is a real competitive advantage for a coffee shop, but there's no page that explains the perks or lets people sign up online. The mockup has that built in.
+>
+> Most people who Google "coffee Gainesville" land on third-party sites with outdated info. Your own site fixes that and gives your Instagram followers somewhere real to send people.
+>
+> No pressure at all. I just thought what you've built deserved a better online home. If you want to chat, I'm happy to stop by or send over pricing.
+>
+> Collier Uesseler
+> Founder · Lanier Web
+> collier@lanierweb.com · lanierweb.com
+
+### Before walking in
+
+- **Confirm current hours** — sources conflict (some say 6am–7pm, some say 7am–4pm). Verify in person or via Google Maps.
+- **Find owner's name** — not publicly listed anywhere. Ask on walk-in.
+- **Menu items are researched, not confirmed** — be ready to say "we'd swap in your real current menu, these are based on what I found online."
+- The mockup menu has speculative items and prices. Don't lead with specifics on the menu — let them discover it and correct anything that's off.
 
 ### Other Gainesville coffee shops ranked (discovery run 2026-05-11)
 
