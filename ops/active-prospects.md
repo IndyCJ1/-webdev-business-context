@@ -68,8 +68,9 @@ KV namespace `FIZZY_KV` holds the data. Setup steps in `ops/fizzy-admin-cloudfla
 - **Existing site:** https://canopyandtheroots.com/
 - **Industry:** Coffee shop + yoga studio (upstairs) + underground music & comedy listening room (downstairs); membership-driven community space
 - **Location:** 53 W Main Street, Dahlonega, GA 30533
-- **Established:** 2020
-- **Owner(s):** Not listed publicly — need to find on first visit
+- **Established:** 2019 (per About page — "SIX years ago")
+- **Owner:** **Hollie Lytle** (Founder & CEO) — on the About page
+- **Team named on About page:** Ansley Walker (fiber artist), Danny Wilson (interior design), Akeeme Martin (manager + sound), **Franchesca Spittler** (manager + fitness instructor — likely a yoga teacher), Diana, Kerri, Augie (events/social house)
 - **Tier pitched:** **Plus** ($3,500 build + $75/mo) — multi-revenue-stream business; needs proper booking + ticketing + membership funnel. Could grow into Pro with admin add-on for event management.
 - **Repo path:** `cuesseler-web/src/pages/mockups/canopy-and-the-roots/` (single `index.astro` for v1)
 - **Real contact info:**
@@ -91,16 +92,17 @@ Dual-zone aesthetic that mirrors their physical split:
 
 **Strengths:** strong brand identity, beautiful photography, polished aesthetic, clear voice ("Without the clinking of bar glasses, chatter or cell phones"). This is NOT a "your site is ugly" pitch.
 
-**Functional gaps (the actual pitch):**
-- **No phone number** — email-only contact
-- **No hours of operation** listed anywhere
-- **No pricing** — membership mentioned but rates hidden
-- **No online class booking** for yoga
-- **No ticket purchase flow** for music/comedy nights
+**Functional gaps (the actual pitch — verified across Home, Yoga, Memberships, Events, About, Privateevent, For-artists pages):**
+- **No phone number anywhere** on the site
+- **No hours of operation** listed on any page
+- **Membership: explicitly no online sales.** `/memberships` literally says: *"Please inquire in-store; at this time, we do not offer online membership sales."* No tiers, no prices. Strongest pitch point — they're leaving money on the floor every day. Real perks they list: bottomless coffee, merch, discounted show tickets, VIP performance access, premium WiFi, balcony seating, copy services, charging station, exclusive member events. There's also a **"Director's Guild"** add-on (name engraved on director's chairs).
+- **No online class booking** for yoga. `/yoga` lists styles but links out to events page for schedule. Drop-in shown ($12 guest / $8 member) but no per-class reserve flow.
+- **Ticket purchase routes to external platform** — `/events` lists shows but ticket prices aren't shown and "Get TICKETS HERE" links out (probably Eventbrite). No in-page checkout.
+- **Private events use a Google Form.** `/privateevent` describes the offering nicely ("Yoga Workshops • Celebrations • Art Exhibitions + Galleries • Company Events + Training") but the inquiry CTA is *"SUBMIT YOUR EVENT SPACE RENTAL INQUIRY HERE"* → Google Form. No pricing or capacity info shown. Same pattern.
+- **Artist booking uses a Google Form too.** `/for-artists` has a strong positioning line — *"all shows headline original work only (no cover bands here)"* and *"a for-the-artist venue"* — but the booking CTA is *"SUBMIT Booking inquiry HERE"* → Google Form.
+- **No teacher/staff bios** — even though the About page names the full team
 - **No testimonials / social proof**
-- **No teacher/staff bios**
-- **No clear CTAs** — every section ends without a next action
-- **Newsletter form appears incomplete**
+- **Homepage hero readability is poor** — large marquee-letter background bleeds into white body text, especially rough on mobile. (Don't lead with this in cold outreach — let the mockup demonstrate the difference. Bring it up in person if asked.)
 
 ### Pitch angle
 
@@ -110,15 +112,26 @@ Dual-zone aesthetic that mirrors their physical split:
 
 The real site lists perks (bottomless coffee, member merch, special-event discounts, VIP lounge) but no rates. In the demo I sketched out three tiers — they'll tell us what's actually right.
 
+### Real upcoming shows (from /events — pulled May 2026)
+
+- May 23 · Luke Morgan: "Whiskey Jam" country
+- May 30 · Tony & Yve Brook: Blues from Alabama + British Isles Folk
+- May 31 · Coffee Cupping + "Meet the Roaster" (Tan Brown Coffee Roasters)
+- Jun 12 · ZG Smith x Madison Hughes: indie-folk
+- Jun 27 · Caleb Tokarski: Soulful Sounds from NOLA
+
+### Real yoga pricing (from /yoga)
+
+- $12 / guest, $8 / member per class. No class packs, no schedule, no booking.
+
 ### Status
 
-Mockup built — ready to walk in. Dahlonega is ~45 min from Gainesville (easy drop-in). Best time: weekday late morning when the coffee crowd thins but before yoga.
+Mockup built — ready to walk in or email Hollie directly. Dahlonega is ~45 min from Gainesville (easy drop-in). Best time: weekday late morning when the coffee crowd thins but before evening yoga.
 
-**Before walking in, swap in `_business.ts` (or inline in index.astro):**
-- Real phone (currently placeholder `(706) 555-0184`)
-- Real hours (currently best-guess)
-- Real membership pricing
-- Real upcoming shows from their actual calendar
+**Before walking in, still need:**
+- Real phone (placeholder `(706) 555-0184` in the mockup)
+- Real hours (best-guess in the mockup)
+- Real membership pricing — owner-only conversation since they don't publish it
 
 ---
 
